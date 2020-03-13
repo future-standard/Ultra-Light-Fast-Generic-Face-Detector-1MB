@@ -99,7 +99,7 @@ def hard_nms(box_scores, iou_threshold, top_k=-1, candidate_size=200):
     # _, indexes = scores.sort(descending=True)
     indexes = np.argsort(scores)
     # indexes = indexes[:candidate_size]
-    indexes = indexes[-candidate_size:]
+    # indexes = indexes[-candidate_size:]
     while len(indexes) > 0:
         # current = indexes[0]
         current = indexes[-1]
